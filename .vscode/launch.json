@@ -7,8 +7,8 @@
         {
             "type": "msedge",
             "request": "launch",
-            "name": "Open Untitled-3.html",
-            "file": "c:\\Users\\kevin\\OneDrive\\Documents\\GitHub\\Park-rewards-app\\Untitled-3.html"
+            "name": "Open index.html",
+            "file": "c:\\Users\\kevin\\OneDrive\\Documents\\GitHub\\Park-rewards-app\\index.html"
         }
     ]
 }
