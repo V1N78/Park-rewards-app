@@ -4,7 +4,7 @@
         const stopBtn = document.getElementById('stopBtn');
         let stream = null;
 
-        open camera
+        // open camera
         startBtn.addEventListener('click', async () => {
             try {
                 stream = await navigator.mediaDevices.getUserMedia({ video: true, audio: false });
@@ -14,11 +14,11 @@
             }
         });
 
-        stop camera
+        // stop camera
         stopBtn.addEventListener('click', () => {
             if (stream) {
                 stream.getTracks().forEach(track => track.stop());
                 video.srcObject = null;
             }
         });
-    </script>
+</script>
