@@ -7,7 +7,7 @@
         {
             "type": "msedge",
             "request": "launch",
-            "name": "Open Login.html",
+            "name": "Open index.html",
             "file": "c:\\Users\\kevin\\OneDrive\\Documents\\GitHub\\Park-rewards-app\\index.html"
         }
     ]
