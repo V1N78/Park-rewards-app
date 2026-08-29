@@ -1,25 +1,57 @@
 <form action="action_page.php" method="post">
-  <div class="imgcontainer">
-    <img src="Login.png" alt="Login" class="Login">
-  </div>
   <head>
-    <link rel="stylesheet" href="Login page.css">
-  </head>
-  <div class="container">
-    <label for="usrname"><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" name="usrname" required>
-
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
-
-    <a href="index.html"><button type="submit" class="button">Login</button></a>
-    <label>
-      <input type="checkbox" checked="checked" name="remember"> Remember me
-    </label>
+ <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="Login page.css">
+</head>
+<body>
+  <div class="screen">
+ 
+    <header class="app-header">
+      <a href="index.html" class="back-btn">⬅️</a>
+      <h1>Login</h1>
+    </header>
+ 
+    <main class="content">
+      <div class="login-card">
+        <div class="imgcontainer">
+          <img src="Login.png" alt="Hello, welcome!" class="Login">
+        </div>
+ 
+        <form action="action_page.php" method="post" id="loginForm">
+          <div class="container">
+            <label for="usrname"><b>Username</b></label>
+            <input type="text" placeholder="Enter username" id="usrname" name="usrname" required>
+ 
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter password" id="psw" name="psw" required>
+ 
+            <label style="font-weight:normal; display:flex; align-items:center; gap:8px; margin-top:12px;">
+              <input type="checkbox" checked="checked" id="remember" name="remember" style="margin:0;"> Remember me
+            </label>
+ 
+            <p id="loginError" style="color:#f44336; font-size:13px; min-height:16px; margin-top:8px;"></p>
+ 
+            <button type="submit" class="button">Login</button>
+          </div>
+ 
+          <div class="form-footer-row">
+            <a href="index.html"><button type="button" class="cancelbtn">Cancel</button></a>
+            <span class="psw">Forgot <a href="#">password?</a></span>
+          </div>
+        </form>
+      </div>
+    </main>
+ 
+    <nav class="bottom-nav">
+      <a href="index.html" class="nav-link"><button class="nav-btn">🏠</button></a>
+      <a href="Login.html" class="nav-link"><button class="nav-btn active">🔑</button></a>
+      <a href="Learn.html" class="nav-link"><button class="nav-btn">🎓</button></a>
+      <a href="Camera.html" class="nav-link"><button class="nav-btn">📷</button></a>
+      <a href="Rewards.html" class="nav-link"><button class="nav-btn">🎁</button></a>
+      <a href="Map.html" class="nav-link"><button class="nav-btn">🗺️</button></a>
+    </nav>
+ 
   </div>
-
-  <div class="container">
-    <a href="index.html"><button type="button" class="cancelbtn">Cancel</button></a>
-    <span class="psw">Forgot <a href="#">password?</a></span>
-  </div>
-</form> 
+  <script src="Login.js" defer></script>
+</body>
+</html>
