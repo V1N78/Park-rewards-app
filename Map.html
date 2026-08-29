@@ -2,14 +2,34 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>About Page</title>
+    <title>Park Map</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Map</h1>
-    <iframe
-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4291.745453141256!2d77.39914!3d28.50439!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1"
-width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
-</iframe>
-    </body>
-    <a href="index.html"><button class="nav-btn">◀️</button></a>
+  <div class="screen">
+ 
+    <header class="app-header">
+      <a href="index.html" class="back-btn">⬅️</a>
+      <h1>Park map</h1>
+    </header>
+ 
+    <main class="content">
+      <iframe class="map-frame"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4291.745453141256!2d77.39914!3d28.50439!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1"
+        loading="lazy"
+        allowfullscreen>
+      </iframe>
+    </main>
+ 
+    <nav class="bottom-nav">
+      <a href="index.html" class="nav-link"><button class="nav-btn">🏠</button></a>
+      <a href="Login.html" class="nav-link"><button class="nav-btn">🔑</button></a>
+      <a href="Learn.html" class="nav-link"><button class="nav-btn">🎓</button></a>
+      <a href="Camera.html" class="nav-link"><button class="nav-btn">📷</button></a>
+      <a href="Rewards.html" class="nav-link"><button class="nav-btn">🎁</button></a>
+      <a href="Map.html" class="nav-link"><button class="nav-btn active">🗺️</button></a>
+    </nav>
+ 
+  </div>
+</body>
 </html>

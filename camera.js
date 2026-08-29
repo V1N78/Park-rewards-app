@@ -1,4 +1,3 @@
-// Test
 const video = document.getElementById('camera');z
 const startBtn = document.getElementById('startBtn');
 const stopBtn = document.getElementById('stopBtn');

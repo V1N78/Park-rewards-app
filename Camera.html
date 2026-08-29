@@ -4,17 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Open Camera</title>
-    <link rel="stylesheet" href="camera style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <h1>Camera Access</h1>
-    <video id="camera" autoplay playsinline></video>
-    <br>
-    <button id="startBtn">Open Camera</button>
-    <button id="stopBtn">Stop Camera</button>
-    <a href="index.html"><button class="nav-btn">◀️</button></a>
-    <script src="camera.js" defer></script>
-
+  <div class="screen">
+ 
+    <header class="app-header">
+      <a href="index.html" class="back-btn">⬅️</a>
+      <h1>Spot wildlife</h1>
+    </header>
+ 
+    <main class="content">
+      <video id="camera" autoplay playsinline></video>
+      <div class="camera-controls">
+        <button id="startBtn" class="btn-primary">Open camera</button>
+        <button id="stopBtn" class="btn-danger">Stop camera</button>
+      </div>
+    </main>
+ 
+    <nav class="bottom-nav">
+      <a href="index.html" class="nav-link"><button class="nav-btn">🏠</button></a>
+      <a href="Login.html" class="nav-link"><button class="nav-btn">🔑</button></a>
+      <a href="Learn.html" class="nav-link"><button class="nav-btn">🎓</button></a>
+      <a href="Camera.html" class="nav-link"><button class="nav-btn active">📷</button></a>
+      <a href="Rewards.html" class="nav-link"><button class="nav-btn">🎁</button></a>
+      <a href="Map.html" class="nav-link"><button class="nav-btn">🗺️</button></a>
+    </nav>
+ 
+  </div>
+  <script src="camera.js" defer></script>
 </body>
 </html>
+ 

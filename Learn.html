@@ -3,14 +3,144 @@
 <head>
     <meta charset="UTF-8">
     <title>Learn Page</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .learn-section { display: none; }
+    .learn-section:target { display: block; }
+    #main-menu { display: block; }
+    #feeding:target ~ #main-menu,
+    #litter:target ~ #main-menu,
+    #nesting:target ~ #main-menu,
+    #water:target ~ #main-menu,
+    #native:target ~ #main-menu { display: none; }
+  </style>
 </head>
-<link rel="stylesheet" href="Learn style.css">
-<div class="center-text">
-    <h1 style= "text-align: center; font-family: Arial, sans-serif;">Learn About the Park</h1>
-</div>
-  <div class="bottom-nav">
-  <a href="index.html"><button class="nav-btn active">🏠</button></a>
+<body>
+  <div class="screen">
+ 
+    <header class="app-header">
+      <a href="index.html" class="back-btn">⬅️</a>
+      <h1>Learn about the park</h1>
+    </header>
+ 
+    <img src="AI image.png" alt="ducks swimming among lily pads" class="hero-img">
+ 
+    <main class="content learn-section" id="feeding">
+      <a href="Learn.html" class="back-btn" style="align-self:flex-start;">⬅️ Back to topics</a>
+      <h1 style="font-size:16px;">Feeding wildlife</h1>
+      <div class="pill pill-static">
+        <span class="label">Why is bread bad for the lake?</span>
+      </div>
+      <div class="pill pill-static">
+        <span class="label">Rotting bread sinks and decaying food lowers oxygen levels in the water</span>
+      </div>
+      <div class="pill pill-static">
+        <span class="label">Harm to eels - Low oxygen can make it hard for eels to survive</span>
+      </div>
+      <div class="tip-box">
+        <span>💡</span>
+        <span>Tip: Bring healthy seeds instead of bread</span>
+      </div>
+    </main>
+ 
+    <main class="content learn-section" id="litter">
+      <a href="Learn.html" class="back-btn" style="align-self:flex-start;">⬅️ Back to topics</a>
+      <h1 style="font-size:16px;">Litter dangers</h1>
+      <div class="pill pill-static">
+        <span class="label">Risks to wildlife</span>
+      </div>
+      <div class="pill pill-static">
+        <span class="label">Plastic hazards - Litter can trap or injure animals</span>
+      </div>
+      <div class="pill pill-static">
+        <span class="label">Ingestion dangers - Animals may mistake rubbish for food</span>
+      </div>
+      <a href="Rewards.html" class="btn-primary" style="text-align:center; text-decoration:none; display:block;">Collect points!</a>
+    </main>
+ 
+    <main class="content learn-section" id="nesting">
+      <a href="Learn.html" class="back-btn" style="align-self:flex-start;">⬅️ Back to topics</a>
+      <h1 style="font-size:16px;">Nesting season</h1>
+      <div class="pill pill-static">
+        <span class="label">Why nests matter</span>
+      </div>
+      <div class="pill pill-static">
+        <span class="label">Disturbing a nest can cause parent birds to abandon their eggs</span>
+      </div>
+      <div class="pill pill-static">
+        <span class="label">Keep dogs on leads and stick to paths near nesting areas</span>
+      </div>
+      <div class="tip-box">
+        <span>💡</span>
+        <span>Tip: Watch nests from a distance with binoculars</span>
+      </div>
+    </main>
+ 
+    <main class="content learn-section" id="water">
+      <a href="Learn.html" class="back-btn" style="align-self:flex-start;">⬅️ Back to topics</a>
+      <h1 style="font-size:16px;">Water quality</h1>
+      <div class="pill pill-static">
+        <span class="label">Why clean water matters</span>
+      </div>
+      <div class="pill pill-static">
+        <span class="label">Chemicals and detergents harm fish, insects and plants</span>
+      </div>
+      <div class="pill pill-static">
+        <span class="label">Never rinse paint, oil or cleaning products near the lake</span>
+      </div>
+      <div class="tip-box">
+        <span>💡</span>
+        <span>Tip: Report any spills to a park ranger straight away</span>
+      </div>
+    </main>
+ 
+    <main class="content learn-section" id="native">
+      <a href="Learn.html" class="back-btn" style="align-self:flex-start;">⬅️ Back to topics</a>
+      <h1 style="font-size:16px;">Native wildlife</h1>
+      <div class="pill pill-static">
+        <span class="label">Protecting native species</span>
+      </div>
+      <div class="pill pill-static">
+        <span class="label">Introduced predators like stoats and rats can harm native birds and eggs</span>
+      </div>
+      <div class="pill pill-static">
+        <span class="label">Sightings of pests help rangers protect vulnerable species</span>
+      </div>
+      <a href="Rewards.html" class="btn-primary" style="text-align:center; text-decoration:none; display:block;">Collect points!</a>
+    </main>
+ 
+    <main class="content" id="main-menu">
+      <a href="#feeding" class="pill">
+        <span class="icon">🐤</span>
+        <span class="label">Feeding wildlife<br><small>The impact of feeding animals</small></span>
+      </a>
+      <a href="#litter" class="pill">
+        <span class="icon">🧺</span>
+        <span class="label">Litter dangers<br><small>How rubbish affects wildlife</small></span>
+      </a>
+      <a href="#nesting" class="pill">
+        <span class="icon">🥚</span>
+        <span class="label">Nesting season<br><small>Why to keep your distance</small></span>
+      </a>
+      <a href="#water" class="pill">
+        <span class="icon">💧</span>
+        <span class="label">Water quality<br><small>Keeping the lake clean</small></span>
+      </a>
+      <a href="#native" class="pill">
+        <span class="icon">🦆</span>
+        <span class="label">Native wildlife<br><small>Protecting local species</small></span>
+      </a>
+    </main>
+ 
+    <nav class="bottom-nav">
+      <a href="index.html" class="nav-link"><button class="nav-btn">🏠</button></a>
+      <a href="Login.html" class="nav-link"><button class="nav-btn">🔑</button></a>
+      <a href="Learn.html" class="nav-link"><button class="nav-btn active">🎓</button></a>
+      <a href="Camera.html" class="nav-link"><button class="nav-btn">📷</button></a>
+      <a href="Rewards.html" class="nav-link"><button class="nav-btn">🎁</button></a>
+      <a href="Map.html" class="nav-link"><button class="nav-btn">🗺️</button></a>
+    </nav>
+ 
   </div>
-<img src="AI image.png" alt="ducks in a pond"
-style="display: block; margin-left: auto; margin-right: auto; width: 50%; height: auto;">
+</body>
 </html>

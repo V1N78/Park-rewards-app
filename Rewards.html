@@ -2,8 +2,54 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>About Page</title>
+    <title>Quiz and Rewards</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-    <h1>Rewards</h1>
-    <a href="index.html"><button class="nav-btn">◀️</button></a>
+<body>
+  <div class="screen">
+ 
+    <header class="app-header">
+      <a href="index.html" class="back-btn">⬅️</a>
+      <h1>Quiz &amp; rewards!</h1>
+    </header>
+ 
+    <main class="content">
+      <div class="pill pill-static">
+        <span class="icon">🧠</span>
+        <span class="label">Test your knowledge</span>
+      </div>
+      <div class="pill pill-static">
+        <span class="icon">🎯</span>
+        <span class="label">Answer the quiz and earn points!</span>
+      </div>
+ 
+      <img src="AI image.png" alt="ducks swimming among lily pads" class="hero-img" style="width:100%; margin:0; max-height:140px;">
+ 
+      <p class="quiz-progress" id="quizProgress"></p>
+      <p class="quiz-question" id="quizQuestion"></p>
+      <div class="quiz-options" id="quizOptions"></div>
+      <button class="btn-primary" id="nextBtn" style="display:none;">Next question</button>
+ 
+      <div class="points-bar">Your points: <span id="pointsTotal">0</span></div>
+ 
+      <div class="gift-row">
+        <span style="font-size:22px;">🎁</span>
+        <span style="color:white; font-weight:600; font-size:13px;">Claim your reward</span>
+        <span style="font-size:22px;">🎁</span>
+      </div>
+    </main>
+ 
+    <nav class="bottom-nav">
+      <a href="index.html" class="nav-link"><button class="nav-btn">🏠</button></a>
+      <a href="Login.html" class="nav-link"><button class="nav-btn">🔑</button></a>
+      <a href="Learn.html" class="nav-link"><button class="nav-btn">🎓</button></a>
+      <a href="Camera.html" class="nav-link"><button class="nav-btn">📷</button></a>
+      <a href="Rewards.html" class="nav-link"><button class="nav-btn active">🎁</button></a>
+      <a href="Map.html" class="nav-link"><button class="nav-btn">🗺️</button></a>
+    </nav>
+ 
+  </div>
+ 
+  <script src="Rewards.js" defer></script>
+</body>
 </html>
