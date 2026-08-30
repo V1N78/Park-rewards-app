@@ -1,4 +1,4 @@
-const video = document.getElementById('camera');z
+const video = document.getElementById('camera');
 const startBtn = document.getElementById('startBtn');
 const stopBtn = document.getElementById('stopBtn');
 let stream = null;

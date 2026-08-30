@@ -35,7 +35,7 @@ const nextBtn = document.getElementById('nextBtn');
 const pointsTotal = document.getElementById('pointsTotal');
  
 let current = 0;
-let score = 0;
+let score = parseInt(localStorage.getItem('quizScore')) || 0;
 let answered = false;
  
 function loadQuestion() {
@@ -76,6 +76,7 @@ function selectAnswer(index, button) {
     if (index === q.correct) {
         score += POINTS_PER_CORRECT;
         pointsTotal.textContent = score;
+        localStorage.setItem('quizScore', score);
     }
  
     nextBtn.textContent = current === questions.length - 1 ? 'Restart quiz' : 'Next question';
@@ -87,6 +88,7 @@ nextBtn.addEventListener('click', () => {
         current = 0;
         score = 0;
         pointsTotal.textContent = score;
+        localStorage.removeItem('quizScore');
     } else {
         current++;
     }

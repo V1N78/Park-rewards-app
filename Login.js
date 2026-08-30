@@ -3,6 +3,10 @@ const usernameInput = document.getElementById('usrname');
 const passwordInput = document.getElementById('psw');
 const rememberInput = document.getElementById('remember');
 const errorMsg = document.getElementById('loginError');
+
+if (!form || !usernameInput || !passwordInput || !rememberInput || !errorMsg) {
+    console.error('Login form elements not found in the DOM');
+}
  
 const VALID_USERNAME = 'ranger';
 const VALID_PASSWORD = 'duck123';
