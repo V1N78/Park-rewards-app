@@ -144,7 +144,6 @@ body {
   align-items: center;
 }
 
-/* ===== Buttons ===== */
 .btn-primary {
   background: var(--blue-btn);
   color: var(--white);
