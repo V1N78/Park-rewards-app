@@ -8,8 +8,8 @@ if (!form || !usernameInput || !passwordInput || !rememberInput || !errorMsg) {
     console.error('Login form elements not found in the DOM');
 }
  
-const VALID_USERNAME = 'ranger';
-const VALID_PASSWORD = 'duck123';
+const VALID_USERNAME = 'username';
+const VALID_PASSWORD = 'password123';
  
 const savedUsername = localStorage.getItem('wildlifeAppUsername');
 if (savedUsername) {
@@ -32,6 +32,6 @@ form.addEventListener('submit', (event) => {
         localStorage.setItem('wildlifeAppLoggedIn', 'true');
         window.location.href = 'index.html';
     } else {
-        errorMsg.textContent = 'Incorrect username or password. Try ranger / duck123.';
+        errorMsg.textContent = 'Incorrect username or password. Try username / password123.';
     }
 });
