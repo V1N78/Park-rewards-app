@@ -11,7 +11,7 @@ if (!form || !usernameInput || !passwordInput || !rememberInput || !errorMsg) {
 const VALID_USERNAME = 'username';
 const VALID_PASSWORD = 'password123';
  
-const savedUsername = localStorage.getItem('wildlifeAppUsername');
+const savedUsername = localStorage.getItem('ParkPatrolUsername');
 if (savedUsername) {
     usernameInput.value = savedUsername;
 }
@@ -25,11 +25,11 @@ form.addEventListener('submit', (event) => {
  
     if (username === VALID_USERNAME && password === VALID_PASSWORD) {
         if (rememberInput.checked) {
-            localStorage.setItem('wildlifeAppUsername', username);
+            localStorage.setItem('ParkPatrolUsername', username);
         } else {
-            localStorage.removeItem('wildlifeAppUsername');
+            localStorage.removeItem('ParkPatrolUsername');
         }
-        localStorage.setItem('wildlifeAppLoggedIn', 'true');
+        localStorage.setItem('ParkPatrolLoggedIn', 'true');
         window.location.href = 'index.html';
     } else {
         errorMsg.textContent = 'Incorrect username or password. Try username / password123.';
