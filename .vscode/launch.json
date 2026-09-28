@@ -5,7 +5,7 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "type": "chrome",
+            "type": "msedge",
             "request": "launch",
             "name": "Open Login.html",
             "file": "c:\\Users\\kevin\\OneDrive\\Documents\\GitHub\\Park-rewards-app\\Login.html"
